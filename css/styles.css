@@ -7,5 +7,15 @@ body{
 a{
     text-decoration: none;
     color: white;
-    
+    font-size: 30px;
+}
+.ul-nav{
+    list-style: none;
+}
+.li-nav{
+    display: inline;
+}
+.img-nav{
+    width: 150px;
+    height: 150px;
 }
