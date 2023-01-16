@@ -1,0 +1,33 @@
+body {
+  color: white;
+  margin: 0;
+  background-color: rgb(43, 43, 43);
+  font-family: "Metrophobic", sans-serif;
+}
+header {
+  background-color: black;
+  display: flex;
+  min-height: 150px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 110px;
+  margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color: rgb(0, 195, 255);
+}
