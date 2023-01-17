@@ -50,3 +50,35 @@ nav a:hover {
     padding: 10px 0px;
   }
 }
+div h1{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "art main asd"
+    "art main asd";
+}
+main{
+    grid-area: main;
+}
+article{
+    grid-area: art;
+}
+aside{
+    grid-area: asd;
+}
+.grid-div{
+    background-color: rgb(78, 78, 78);
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 10px;
+}
+.img-grid{
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+}
