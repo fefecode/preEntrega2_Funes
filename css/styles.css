@@ -159,3 +159,7 @@ h1{
         "ray"
         "cla";
     }
+    .grid img{
+        width: 300px;
+    }
+}
