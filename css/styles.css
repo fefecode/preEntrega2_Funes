@@ -1,11 +1,11 @@
 body {
   color: white;
   margin: 0;
-  background-color: rgb(43, 43, 43);
+  background-image: url("../media/img/DedsecPattern.jpg");
   font-family: "Metrophobic", sans-serif;
 }
 header {
-  background-color: black;
+  background-color: rgb(0, 0, 0, 0.9);
   display: flex;
   min-height: 150px;
   justify-content: space-between;
@@ -56,10 +56,9 @@ div h1{
 .grid{
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.3fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 10px;
     grid-template-areas: 
-    "art main asd"
     "art main asd";
 }
 main{
@@ -72,7 +71,7 @@ aside{
     grid-area: asd;
 }
 .grid-div{
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(53, 53, 53, 0.9);
     border-radius: 6px;
     font-size: 20px;
     padding: 10px;
@@ -81,4 +80,82 @@ aside{
     display: block;
     margin: auto;
     padding-top: 30px;
+    border-radius: 20px;
 }
+h1{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0, 0.6);
+}
+.personajes-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas:
+    "tit tit tit" 
+    "ray aid cla";
+}
+.aiden{
+    grid-area: aid;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.9);
+    border-radius: 30px;
+    padding: 10px 80px 10px 80px;
+}
+.raymond{
+    grid-area: ray;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.9);
+    border-radius: 30px;
+    padding: 10px 80px 10px 80px;
+}
+.clara{
+    grid-area: cla;
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.9);
+    border-radius: 30px;
+    padding: 10px 80px 10px 80px;
+
+}
+.personajes-titulo{
+    grid-area: tit;
+}
+.pers-grid img{
+    transition: all 2s;
+}
+.pers-grid img:hover{
+    transform: scale(1.2);
+    transition: all 2s;
+}
+@media (max-width: 700px) {
+    body{
+        background-image: none;
+        background-color: black;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+        grid-template-areas: 
+        "art"
+        "main"
+        "asd";
+    }
+    .personajes-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "tit" 
+        "aid"
+        "ray"
+        "cla";
+    }
